@@ -92,7 +92,7 @@ public class ProductController {
 
     @GetMapping(value="/produitsByNom")
     public List<Product> trierProduitsParOrdreAlphabetique() {
-        return productDao.findAllOrderByNom();
+        return productDao.findAllByOrderByNom();
     }
 
 
